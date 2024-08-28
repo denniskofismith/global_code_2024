@@ -21,7 +21,9 @@ class mp3playlist:
         self.tracks.append(playlist)
         
     def remove_playlist(self,playlist=str):
+
         index = self.tracks.index(playlist)
+        
         self.tracks.pop(index)
         
     def count_numbs_tracks(self):
