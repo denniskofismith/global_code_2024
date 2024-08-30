@@ -1,0 +1,102 @@
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: Inter-VariableFont;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Inter-Regular;
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter-Bold;
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+body {
+    background: var(--Grey-900);
+}
+
+main {
+    max-width: 400px;
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 3em;
+    background: var(--Grey-800);
+    color: var(--White);
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+header h1 {
+    font-family: Inter-Bold;
+}
+
+header p {
+    color: var(--White);
+    font-family: Inter-Regular;
+    font-size: .8rem;
+}
+
+header img {
+    border-radius: 90px;
+    width: 30%;
+
+}
+
+header h3 {
+    color: var(--Green);
+    font-family: Inter-SemiBold;
+}
+
+
+.grid-Container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto auto auto auto;
+}
+
+.grid-item {
+    background: var(--Grey-700);
+    border-radius: 9px;
+    font-family: Inter-SemiBold;
+}
+
+.grid-item:hover {
+    background: var(--Green);
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--White);
+}
+
+a:hover {
+    color: var(--Grey-900);
+}
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
